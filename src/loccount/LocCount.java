@@ -45,9 +45,7 @@ public class LocCount {
                     scannedFilesCount.add(locCount);
                     System.out.println("\tLines counted: " + locCount);
                 }
-            } catch (Error e) {
-                System.out.println("Someone messed something up\n\n" + e.getMessage());
-            } catch (Exception e) {
+            } catch (IOException e) {
                 System.out.println("Someone messed something up\n\n" + e.getMessage());
             }
 
